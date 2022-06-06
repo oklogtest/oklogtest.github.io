@@ -1,1 +1,109 @@
+<!doctype html>
+<html><!--反白藍底紅字 -->
+	<head>
+		<title>oklogtest</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+	<body>
+		<center>
+			<h1>我的遊戲生涯</h1>
+			<button onclick="player()">玩家調查</button>
+			<p id="result"></p>
+			<br>
+			<br>
+		</center>
+		<div id="first"><!--黑底白字 -->
+			<br>
+			<h2>小學時期</h2>
+			<hr>
+			<h4>小時候最喜歡看老爸打世紀帝國。玩開心農場，賽爾號，小五喜歡玩英雄聯盟和cs1.6還有星海爭霸2</h4>
+			<br>
+		</div>
+		<div id="second"><!--灰底白字 -->
+			<br>
+			<h2>國中時期</h2>
+			<hr>
+			<h4>國中喜歡玩a.v.a戰地之王還有overwatch和殺時間的好夥伴都市:天際線，也和我表哥和他的朋友玩了最紅的pubg。</h4>
+			<br>
+		</div>
+		<div id="third"><!--黃底黑字 -->
+			<br>
+			<h2>高中時期</h2>
+			<hr>
+			<h4>上高中看著班上同學只會打傳說還有英雄聯盟，我只好自己玩1000個小時的文明帝國，還有一些朋友有在玩黑色沙漠。<br>高二時終於找到一些朋友打apex，沒想到他們根本射不到人還怪隊友，這好像在每個團隊遊戲都會發生。還好我找到人一起玩世紀帝國二，除了我和他，還有其他四五十歲的老玩家。<br>到準備學測的痛苦日子前，全軍破敵:戰槌二和魔物獵人:世界是個好夥伴，就算讀書讀到很累，爛輝龍還是得刷一下。</h4>
+			<br>
+		</div>
+		<div id="forth">
+			<h2>大學時期</h2>
+		</div>
+		<div id ="unorderlist">
+			<br>
+			<h4>特別感謝遊戲名單</h4>
+			<ul>
+				<!--marker 紅色48px -->
+				<!--超連結 點過、沒點過、點選時、還沒點選時 -->
+				<a href="https://store.ubi.com/sea/anno-1800-new?lang=zh_TW" target="_blank"><li>Anno:1800</li></a>
+				<li>Factorio</li>
+				<li>Frostpunk</li>
+				<li>Velheim</li>
+				<li>Elden ring</li>
+				<li>Destiny 2</li>
+				<li>Ark survival evolved</li>
+				<li>Cyberpunk 2077</li>
+				<li>Battlefield 1</li>
+				<li>Battlefield 5</li>
+				<li>Call of duty black ops 4</li>
+			</ul>
+		</div>
+		<div class="regretbuy">
+		
+			<center>
+				<h1>人生最盤名單</h1>
+				<hr>
+				<table border="1">	
+					<tr>
+						<th>名字</th>		
+						<th>購買時價錢</th>
+						<th>遊玩時數(小時)</th>
+					</tr>
+					<tr>
+						<td>Battlefield 5</td>
+						<td>1799</td>
+						<td>35</td>
+					</tr>
+					<tr>
+						<td>Call of duty black ops 4</td>
+						<td>1834</td>
+						<td>51</td>
+					</tr>
 
+					<tr>
+						<td>battlefield 1 </td>
+					<td>1799</td>
+					<td>92</td>
+					</tr>
+					<tr>
+						<td>divinity orginal sin 2 </td>
+						<td>800</td>
+						<td><span style="color:red">4.8</span></td>
+					</tr>
+				</table>
+				<p id="secrect">好險我沒買battlefield 2040</p><!-- 鼠標移動到區塊時才會出現 -->
+			</center>
+		</div>
+		<script>
+			alert('前有悲傷');
+			function player(){
+				var games;
+					if(confirm("你會玩英雄聯盟或類似以外的遊戲嗎")){
+						games="來加個DC吧";
+					}
+					else{
+						games="唉...";
+					}
+				document.getElementById("result").innerHTML=games;
+			}
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,44 @@
+a:link{
+	color:blue;
+}
+a:visited{
+	color:red;
+}
+a:hover{
+	color:yellow;
+}
+a:active{
+	color:green;
+}
+#secrect{
+	padding: 16px;
+	text-align:center;
+	display:none;
+}
+
+div:hover #secrect{
+	display:block;
+}
+th,td{
+	text-align:center;
+	padding:12px;
+}
+#first{
+	background-color:black;
+	color:white;
+}
+#second{
+	background-color:gray;
+	color:white;
+}
+#third{
+	background-color:yellow;
+}
+::marker{
+	color:red;
+	font-size:48px;
+}
+::selection{
+	color:red;
+	background:blue;
+}
